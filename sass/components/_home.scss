@@ -1,0 +1,21 @@
+.home {
+  // Box
+  padding: 5rem;
+  // Background image & linear gradient
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-dark, 0.7),
+    rgba($color-primary-dark, 0.8)),
+  url('../../img/tech.jpg');
+  background-size: cover;
+  // Flexbox
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading-span {
+    background-image: linear-gradient(to right bottom, 
+      rgba($color-primary, .90), 
+      rgba($color-primary-dark, .90));
+  }
+}

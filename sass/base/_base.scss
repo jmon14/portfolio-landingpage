@@ -7,39 +7,19 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // * 1rem=10px
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: $color-grey-dark;
-  padding: 3rem;
-
   box-sizing: border-box;
+
+  background-color: $color-primary-light;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+ul {
+  list-style: none;
 }
 
-.header {
-  .logo {
-    float: left;
-  }
-  .navigation {
-    float: right;
-    ul {
-      list-style: none;
-    }
-    li {
-      display: inline-block;
-    }
-    a:link {
-      text-decoration: none;
-    }
-  }
+section {
+  height: calc(100vh - #{$header-height});
 }

@@ -1,10 +1,21 @@
-$color-primary: #415a77;
-$color-primary-light: #778da9;
-$color-primary-dark: #1b263b;
+// Color palette
+$color-primary:         #00b4d8;
+$color-primary-light:   #caf0f8;
+$color-primary-dark:    #012a4a;
 
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
+$color-secondary-light: #ffb900;
+$color-secondary-dark:  #ff7730;
 
-$color-accent: #ef8354;
-$color-warn: #ee6055;
+$color-grey-light-1:    #f7f7f7;
+$color-grey-light-2:    #eee;
+
+$color-grey-dark:       #777;
+$color-grey-dark-2:     #999;
+$color-grey-dark-3:     #333;
+
+$color-white:           #fff;
+$color-black:           #000;
+
+// Size
+$header-logo: 4rem;
+$header-height: 6rem;

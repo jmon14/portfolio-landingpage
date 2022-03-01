@@ -1,0 +1,27 @@
+// Header component
+.header {
+  padding: 1rem 2rem;
+  // Sticky header
+  position: sticky;
+  top: 0;
+  // Flex layout
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // Header color
+  background-color: $color-primary-dark;
+  // Navigation list
+  .navigation {
+    &__list {
+      // Flex layout
+      display: flex;
+    }
+    // Navigation item
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

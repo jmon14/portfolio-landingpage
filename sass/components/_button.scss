@@ -1,0 +1,54 @@
+.btn {
+  // Box
+  display: inline-block;
+  padding: 8px 0;
+  height: 100%;
+  width: 100%;
+  // Animation
+  transition: all .4s;
+  // Style
+  text-decoration: none;
+  // Flex layout
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Line below button for hover
+  &::before,
+  &::after {
+    // Box
+    height: 1px;
+    width: 100%;
+    content: '';
+    // Position
+    position: absolute;
+    // Animation
+    transform: scaleX(0);
+    transition: all .4s;
+  }
+
+  &::before {
+    top: 3px;
+  }
+
+  &::after {
+    bottom: 3px;
+  }
+
+  &--active {
+    &::before,
+    &::after {
+      transform: scaleX(.5);
+    }
+  }
+
+  // Scale lines on hover
+  &:hover {
+    &::before {
+      transform: scaleX(0);
+    }
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
